@@ -1,7 +1,19 @@
-"dependencies": {
-  "astro": "^5.5.0",
-  "@astrojs/mdx": "^4.0.3",
-  "@astrojs/sitemap": "^3.2.1",
-  "tailwindcss": "^4.1.0",
-  "@tailwindcss/vite": "^4.1.0"
+{
+  "name": "astroship",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.5.0",
+    "@astrojs/mdx": "^4.0.3",
+    "@astrojs/sitemap": "^3.2.1",
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/vite": "^4.1.0"
+  }
 }
