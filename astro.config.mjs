@@ -1,14 +1,14 @@
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import icon from "astro-icon";
+import cloudflare from "@astrojs/cloudflare";
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
-  integrations: [mdx(), sitemap(), icon()],
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  site: "https://surpassagent.com",
+  integrations: [tailwind(), mdx(), sitemap()],
+  output: "static",
+  adapter: cloudflare({
+    imageService: "compile"
+  })
 });
