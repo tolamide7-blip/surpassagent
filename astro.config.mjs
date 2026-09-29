@@ -1,14 +1,11 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import cloudflare from "@astrojs/cloudflare";
+// @ts-check
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 
+// https://astro.build/config
 export default defineConfig({
-  site: "https://surpassagent.com",
+  site: 'https://surpassagent.com',
   integrations: [tailwind(), mdx(), sitemap()],
-  output: "static",
-  adapter: cloudflare({
-    imageService: "compile"
-  })
 });
